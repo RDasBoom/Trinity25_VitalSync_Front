@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VitalSync - Reminders & Appointments</title>
+  <link rel="stylesheet" href="VitalSync.css" />
+  <style>
+    .appointments-section {
+      grid-area: main;
+      padding: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+
+    .input{
+      padding:10px;
+      font-size: 16px;
+      border:1px solid black;
+      border-radius: 5px;
+      width:300px;
+      height:50px;
+    }
+    .Time{
+      padding:10px;
+      font-size: 16px;
+      border:1px solid black;
+      border-radius: 5px;
+      width:70px;
+      height:50px;
+    }
+
+    .fillup{
+      display: inline;
+    }
+
+    .appointments-section h2 {
+      color: #1a73e8;
+      font-size: 20px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #f1f3f4;
+      padding-bottom: 10px;
+      grid-column: 1 / -1;
+    }
+
+    .appointments-section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .appointments-section li {
+      background-color: #ffffff;
+      border-left: 5px solid #1a73e8;
+      padding: 12px 16px;
+      margin-bottom: 12px;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    
+    .button {
+      width: 100px;
+      height: 45px;  
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #1a73e8;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #1557b0;
+}
+
+
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>VitalSync</h2>
+      <ul>
+        <li><a href="dash.html">Dashboard</a></li>
+        <li class="active"><a href="appointments.html">Medications & Appointments</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </aside>
+
+    <!-- Header -->
+    <header class="header">
+      <ul class="top-nav">
+        <li><a href="dash.html">Dashboard</a></li>
+        <li><a href="appointments.html">Medications & Appointments</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <a href="create.html" class="user-icon">👤</a>
+    </header>
+
+    <!-- Main Content -->
+    <main class="appointments-section">
+      <h2>Medication Reminders</h2>
+      <ul>
+        <li><strong>9:00 AM:</strong> Take Blood Pressure Medication - Atenolol</li>
+        <li><strong>2:00 PM:</strong> Cholesterol medications - PCSK9 inhibitors</li>
+        <li><strong>9:00 PM:</strong> Osteoarthritis (Joint pain) - NSAIDs</li>
+      </ul>
+      <div class="fillup">
+      <input id="time" type="text" class="Time" placeholder="Time">
+      <label for="time"></label>
+
+      <input id="medication" type="text" class="input" placeholder="Add your medication">
+      <label for="medication"></label>
+      </div>
+      <button>Add</button>
+
+      <h2>Upcoming Appointments</h2>
+      <ul>
+        <li><strong>April 26, 2025 - 10:30 AM:</strong> Dr. Subhash Chandra - Cardiologist</li>
+        <li><strong>May 2, 2025 - 2:00 PM:</strong> Lab Tests - General Blood Tests</li>
+      </ul>
+      <div class="fillup">
+        
+        <input id="time" type="text" class="Time" placeholder="Time">
+        <label for="time"></label>
+       
+  
+        <input id="appointment" type="text" class="input" placeholder="Add your Appointment Schedule">
+        <label for="appointment"></label>
+      </div>
+      <button class="button">Add</button>
+     
+    </main>
+  </div>
+</body>
+</html>

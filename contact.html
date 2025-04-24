@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>VitalSync</h2>
+            <ul>
+                <li><a href="dash.html">Dashboard</a></li>
+                <li><a href="appointments.html">Medications & Appointments</a></li>
+                <li class="active">Contact Us</li>
+                
+            </ul>
+        </aside>
+
+        <!-- Header -->
+        <header class="header">
+            <ul class="top-nav">
+                <li><a href="dash.html">Dashboard</a></li>
+                <li><a href="appointments.html">Medications & Appointments</a></li>
+                <li class="active">Contact Us</li>
+            </ul>
+            <a href="create.html" class="user-icon">👤</a>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="contact_container">
+                <div class="right_container">
+                    <h2 class="heading">Contact Us</h2>
+                    <p class="contact_info">Have questions, suggestions, or need assistance? We’re here to help!
+                        Feel free to reach out through the contact form or connect with us on social media.
+                        We aim to respond to all inquiries promptly and provide the support you need.</p>
+                    <div class="link_container">
+                        <h2 class="contact_heading">Contact on Social Media</h2>
+
+                        <div class="social-link">
+                            <div class="logo_link">
+                                <a href="https://www.linkedin.com/feed/" target="_blank">
+                                    <img src="linkedin.png" class="svg-img">
+                                    <span class="logo-txt">LinkedIn</span>
+                                </a>
+                            </div>
+                            <div class="logo_link">
+                                <a href="https://github.com/" target="_blank">
+                                    <img src="github-logo.png" class="svg-img">
+                                    <span class="logo-txt">GitHub</span>
+                                </a>
+                            </div>
+                            <div class="logo_link">
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <img src="inst_logo.jpg" class="svg-img">
+                                    <span class="logo-txt">Instagram</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="left_container">
+                    <form>
+                        <div class="input-group1">
+                            <div class="input-box">
+                                <input type="text" placeholder="Full Name" size="20">
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <div class="input-box">
+                                <input type="tel" id="phone" name="phone" maxlength="10" pattern="[0-9]{10}" placeholder="Enter 10 digit Phone Number" required/>
+                            </div>
+                        </div>
+                        <div class="input-group2">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                            <input type="submit" value="Send Message" class="btn">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
