@@ -245,3 +245,15 @@ a{
     text-decoration: none;
     color:black;
 }
+
+@media (max-width: 768px) {
+  .contact_container {
+      flex-direction: column-reverse;
+  }
+
+  .left_container {
+      width: 100%;
+  }
+}
+
+ 
